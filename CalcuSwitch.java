@@ -3,10 +3,13 @@ public class CalcuSwitch {
     public static void main(String[] args){
         Scanner input  = new Scanner(System.in);
       
+        
         while(true){
+            try{
+
             
             
-            System.out.println("Enter  a number (1-4) \n number-1=> Add(sum) \n number-2 => Subrract.\n number-3 => Multiplay. \n number-4 => Divide. \n number-5 => Exit whith zero(0) ");
+            System.out.println("Enter  a number (1-5) \n number-1=> Add(sum) \n number-2 => Subrract.\n number-3 => Multiplay. \n number-4 => Divide. \n number-5 => Exit whith zero(0) ");
             int number =  input.nextInt();
             if(number == 0){
                 System.out.println("Exiteing program....");
@@ -59,6 +62,16 @@ public class CalcuSwitch {
                 System.out.println("Invalid choise!");
                 break;
           }
+        }catch(Exception e){
+            System.out.println("");
+            System.out.println("\t \t LOOK HEAR \t ");
+            System.out.println("Oops, you've completely left the loop. First look at Minoo, then at the election of Mr. Kennedy!\n \n ");
+            System.out.println("Error: Please enter a valid numerical value.");
+            input.nextLine();
+            
+        }finally{
+            System.out.println("Hey, don't be tired. Thank you very much for your good mood.\n \n ");
+        }
 
           
          
